@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome to Practise Web Development
+        </title>
+        <h2>ONLINE STUDY AND REFRESHMENT.</h2>
+        <link rel="stylesheet" href="ip.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="https://www.tutorialspoint.com/python/index.htm">Python</a></li>
+                <li><a href="https://www.tutorialspoint.com/javascript/index.htm">JavaScript</a></li>
+                <li><a href="https://www.youtube.com/watch?v=EMY9EYSK-F4">Playlist</a></li>
+            </ul>
+        </nav>
+        <h1 id="heading">Welcome</h1>
+        <p id="text"> This is my Page</p>
+        <h3 class="move">  Welcome to Our Site. Enjoy Learning </h3>
+        <div>
+        <div class="container" id="img">
+            <img src="C:\Users\lucia\OneDrive\Pictures\Saved Pictures\lucy.jpg" alt="Trying to insert image">
+        
+       <div class="intro" >
+        <p>
+            Hi, I'm Lucy, a passionate and driven tech enthusiast with experience in Web Development and Data Science. 
+            In web development, I work with HTML, CSS, JavaScript, PHP, and MySQL, building dynamic, user-friendly web applications.
+             I focus on clean design, responsive layouts, and secure backend systems.
+            In parallel, I'm also developing strong skills in Data Science, where I work with Python, Pandas, NumPy, Matplotlib, 
+            and machine learning models. I enjoy exploring data, uncovering insights, and building predictive models that solve real-world 
+            problems.
+            I love combining both fields to create smart applications — integrating machine learning into web interfaces for
+            intelligent user experiences. My long-term goal is to continue growing in both areas and become a well-rounded tech professional.
+        </p>
+    </div>
+</div>
+        <button onclick="showMessage()">Click Here</button>
+        <p id="demo"></p>
+        <script>
+            function showMessage(){
+                document.getElementById("demo").innerHTML="Hello, Enter your details";
+            }
+            var btn=document.createElement("button");
+            btn.innerHTML="Change to Swahili";
+            document.body.appendChild(btn);
+
+            var english=true;
+            btn.onclick=function() {
+                if(english) {
+
+            document.getElementById("heading").innerHTML="Karibu";
+            document.getElementById("text").innerHTML="Huu ni ukurasa wangu";
+            btn.innerHTML="Change to English";} 
+            else
+            {
+                document.getElementById("heading").innerHTML="Welcome";
+            document.getElementById("text").innerHTML="This is my page";
+            btn.innerHTML="Change to Swahili";}
+            english=!english;
+        };
+ </script>
+       <form action="https://www.w3schools.com/action_page.php">
+    <input type="text" name="name" placeholder="Enter your name" required ><br><br>
+    <input type="email" name="email" placeholder="Enter your email" > <br><br>
+    <input type="password" name="password" placeholder="Enter you password"><br><br>
+    <label> Gender</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+    <B>Select your course here</B>
+    <select>
+        <option value="CS"> Computer Science
+            <option value="CNISE"> Computer Networking and Secutity
+                <option value="SE"> Software Engineering
+                    <option value="TE">Telecommuniction Engineering.
+    </select><br><br>
+    <input type="submit" value="submit">
+</form>
+<button onclick="switchToEnglish()">English</button>
+<button onclick="switchToSwahili()">Swahili</button>
+
+<table>
+    <h3>BUSINESS RECORDS</h3>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Product</th>
+    </tr>
+    <tr>
+        <td>Lucy </td>
+        <td>23</td>
+        <td>Books</td>
+    </tr>
+    <tr>
+        <td> Leoberth</td>
+        <td>12</td>
+        <td>Shoes</td>
+    </tr>
+</table>
+    
+    <footer>
+       <p> &copy; All rights are reserved..</p> 
+       <p> Designed by : Eng Lucy</p>
+    </footer>
+</body>
+</html>
